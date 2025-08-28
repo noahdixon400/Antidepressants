@@ -1,0 +1,214 @@
+%\documentclass[12pt,letterpaper,doublespace, oneside]{article}
+\documentclass[17pt]{extarticle}  % Use 14pt globally
+
+
+
+
+%Here are the various packages I use. Some may be duplicated. 
+\usepackage{enumerate}
+\usepackage{etoolbox}
+\usepackage{amsmath,amsthm,amssymb} %this is THE math package
+\usepackage{mathtools} %to beef up the above package, more math!
+\usepackage{tikz} %for drawing 
+\usepackage{graphicx} %for including graphics
+\usepackage{fancybox} %for some nice formatting options
+\usepackage{hyperref} %for referencing
+%hidelinks removes red and green boxes
+\usepackage{varwidth} %for some nice width control
+\usepackage{mdframed} %for framed environments
+\usepackage{mathrsfs} %more math fonts
+\usepackage{xcolor} %THE colour package
+\usepackage{setspace}
+\usepackage{multirow,array}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage[numbers, square]{natbib}
+\usepackage{titlecaps}
+%\usepackage[paper=a3paper]{geometry}
+\usepackage{tabularx}
+\usepackage{cleveref}
+%attempting to capitalize citations
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\usepackage{xstring}
+\usepackage{nameref}
+\usepackage{amsthm}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage[normalem]{ulem}
+\usepackage{booktabs} % Include in preamble
+%Here are the various packages I use. Some may be duplicated. 
+
+
+
+
+
+
+%Not sure what these do, but they get the job done%
+%\usepackage[notes,backend=biber]{biblatex-chicago}
+%\usepackage[authordate-trad,backend=biber]{biblatex-chicago}
+\MakeOuterQuote{"}
+%some colours
+\definecolor{firebrick}{RGB}{178,34,34}
+\definecolor{teal}{RGB}{0,128,128}
+\definecolor{indigo}{RGB}{75,0,130}
+\definecolor{darkblue}{rgb}{0.0,0.0,.7}
+\definecolor{darkred}{rgb}{0.6,0.0,0.0}
+\definecolor{lightgrey}{RGB}{220, 220, 220}
+\definecolor{darkgrey}{HTML}{878787}
+\definecolor{forest}{HTML}{004a2f}
+\definecolor{dirt}{HTML}{5d4728}
+\definecolor{newblue}{HTML}{004fd9}
+\definecolor{paleyellow}{HTML}{FFFFD3}
+\renewcommand{\thesection}{}  % Remove numbering from \section
+\renewcommand{\thesubsection}{}  % Remove numbering from \subsection
+\renewcommand{\thesubsubsection}{} 
+\DeclareMathAlphabet{\mathbx}{U}{BOONDOX-ds}{m}{n}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\SetMathAlphabet{\mathbx}{bold}{U}{BOONDOX-ds}{b}{n}
+\DeclareMathAlphabet{\mathbbx} {U}{BOONDOX-ds}{b}{n}
+\doublespacing
+%\usepackageA{hyphenat}
+\DeclareCaptionLabelFormat{blank}{}
+\let\cleardoublepage\relax
+%Not sure what these do, but they get the job done%
+
+
+
+
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{\fill}
+
+    \textsc{\Huge Assignment 1}\\[0.2em]
+
+	\textsc{\Large Macroeconomic Theory II\\[0.5em] Spring 2025}\\[1.5em]
+	
+    {\Large PhD Student in Economics, Texas A\&M University}\\[3em]
+
+	\textbf{\textsc{\LARGE {\color{darkred}Noah Dixon} }}
+	
+	\vspace*{\fill}
+
+\end{titlepage}
+
+%\title
+%\name
+%\data
+%\maketitle
+%\thispagestyle{empty}
+\newpage
+\UseRawInputEncoding
+
+%defining Chicago as purely capitalized
+\newcommand{\capitalizeTitle}[1]{%
+    \StrSubstitute{#1}{ }{~}[\title]%
+    \expandafter\capitalizetitle\expandafter{\title}%
+}
+
+\newcommand{\capitalizetitle}[1]{%
+    \expandafter\StrSubstitute\expandafter{#1}{~}{ }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ a }{ A }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ an }{ An }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ and }{ And }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ as }{ As }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ at }{ At }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ but }{ But }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ by }{ By }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ for }{ For }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ from }{ From }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ in }{ In }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ into }{ Into }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ near }{ Near }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ of }{ Of }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ on }{ On }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ onto }{ Onto }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ or }{ Or }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ the }{ The }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ to }{ To }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ under }{ Under }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ upon }{ Upon }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ with }{ With }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ within }{ Within }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ without }{ Without }[\Title]%
+    \expandafter\StrSubstitute\expandafter{\Title}{ and }{ And }[\Title]%
+    \expandafter\MakeUppercase\expandafter{\Title}%
+}
+
+\newcommand{\zz}{\mathbx Z}   %blackboard bold Z
+\newcommand{\qq}{\mathbx Q}   %blackboard bold Q
+\newcommand{\ff}{\mathbx F}   %blackboard bold F
+\newcommand{\rr}{\mathbx R}   %blackboard bold R
+\newcommand{\nn}{\mathbx N}   %blackboard bold N
+\newcommand{\cc}{\mathbx C}   %blackboard bold C
+\newcommand{\dd}{\mathsf D}   
+\newcommand{\id}{\operatorname{id}} %for identity map
+\newcommand{\im}{\operatorname{im}} %for image of a function
+\newcommand{\dom}{\operatorname{dom}} %for domain of a function
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert} %for absolute value
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert} %for norm
+\newcommand{\modar}[1]{\operatorname{mod}{#1}} %for modular arithmetic
+\newcommand{\set}[1]{\left\{#1\right\}} %for set
+\newcommand{\setp}[2]{\left\{#1\ :\ #2\right\}} %for set with a property
+\newcommand{\lag}{\mathcal{L}}
+
+\renewcommand\thepage{}
+
+%Re-defined notations
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\emptyset}{\varnothing}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+
+%----------------------------------------------
+%Theorem, Lemma, Example, Definition etc. environments
+
+%By default, the text in these environments are italicised
+\theoremstyle{theorem}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{proposition}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+%\newtheorem{theorem}{Theorem}
+\theoremstyle{lemma}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{corollary}
+\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\theoremstyle{definition} %makes text non-italicized
+\theoremstyle{example}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{conclusion}
+\newtheorem{conclusion}[theorem]{Conclusion}
+
+\tableofcontents
+\pagebreak
+
+\section{}
+\begin{proof}
+
+\end{proof}
+
+
+
+%\newpage
+%\bibliographystyle{chicago}
+%\bibliography{BEERthesisREAL.bib}
+%\addcontentsline{toc}{section}{References}
+\end{document}
+
