@@ -207,11 +207,10 @@
 
 \noindent
 
-%\noindent\textbf{Main Idea:} More generally, I am the floating the methodological idea of: (i) uncovering causality on the individual level using quasi-experimental data, (ii) integrating systematic individual-level heterogeneity to uncover population-level data, and (iii) integrating utility functions to model adverse effects as opposed to traditional health-based outcomes.
-%I am not particularly tied to this specific topic, but rather its underlying methodology and applications. 
+
 
 \noindent\textbf{Main Idea:}
-Ideally, to test this hypothesis, we would run a double-blind N-of-1 study with periodic, blocked randomization. However, with antidepressants, this is infeasible, due to biological concerns (e.g., high stabilization and washout periods) and ethical concerns (e.g., suicidal ideation). Fundamentally, this restricts analysis to the aggregate level -- at which point, time-varying heterogeneity is obscured. Consequently, in order to evaluate the individual-level effect, we need to treat the data as being quasi-experimental. Traditionally, this is where the analysis stopped -- there was no plausible way to extract this much data. However, recent technological advancements have altered the bounds of what is permissible. In Brodersen et al. (2015), for instance, they introduce a Bayesian Structural Time Series (BSTS) model to estimate the individual-level counterfactual time series had the intervention not occurred, which they subsequently apply to marketing data. Additionally, in Robins (1986), he introduces the g-method approach -- an approach to individual-level causal inference when there is an abundance of longitudinal data. One serves as a methodological framework; the other as a causal framework. The idea is to \text{``}layer'' one on top of the other, to construct an individual-level counterfactual that uses a conglomerate utility measure rather than a single outcome variable, and which can subsequently be used to identify the personal average treatment effect (PATE). From here -- and assuming a true RCT is conducted -- it may be possible to reconstruct the ATE, with individual-level heterogeneity. 
+Ideally, to test this hypothesis, we would run a double-blind N-of-1 study with periodic, blocked randomization. However, with antidepressants, this is infeasible, due to biological concerns (e.g., high stabilization and washout periods) and ethical concerns (e.g., suicidal ideation). Fundamentally, this restricts analysis to the aggregate level -- at which point, time-varying heterogeneity is obscured. Consequently, in order to evaluate the individual-level effect, we need to treat the data as being quasi-experimental. Traditionally, this is where the analysis stopped -- there was no plausible way to extract this much data. However, recent technological advancements have altered the bounds of what is permissible. In Brodersen et al. (2015), for instance, they introduce a Bayesian Structural Time Series (BSTS) model to estimate the individual-level counterfactual time series had the intervention not occurred. Additionally, in Robins (1986), he introduces the g-method (and more specifically, g-computation) -- an approach to individual-level causal inference when there is an abundance of longitudinal data (which has since been significantly expanded on). One serves as a methodological framework; the other as a causal framework. The idea is to \text{``}layer'' one on top of the other, to construct an individual-level counterfactual that uses a conglomerate utility measure rather than a single outcome variable, and which can subsequently be used to identify the individual treatment effect (ITE). From here -- and assuming a true RCT is conducted -- it may be possible to reconstruct the ATE, with individual-level heterogeneity. 
 
 
 \newpage
@@ -224,7 +223,7 @@ Ideally, to test this hypothesis, we would run a double-blind N-of-1 study with 
 \noindent
 \textbf{Experimental Design} 
 
-\emph{Outcomes:} The outcomes tracked are tri-daily (morning, afternoon, evening) \text{``}mood'' scores and weekly HAM-D scores, in conjunction with \text{``}richer'' measures, including: sleep, step count, mood diary, adverse events, and biomarkers. More generally, if the data is saturated enough, we \emph{may} be able to identify the PATE, absent of the ATE.
+\emph{Outcomes:} The outcomes tracked are tri-daily (morning, afternoon, evening) \text{``}mood'' scores and weekly HAM-D scores, in conjunction with \text{``}richer'' measures, including: sleep, step count, mood diary, adverse events, and biomarkers. More generally, if the data is saturated enough, we \emph{may} be able to identify the ITE, absent of the ATE.
 
 \noindent
 
@@ -246,7 +245,7 @@ Ideally, to test this hypothesis, we would run a double-blind N-of-1 study with 
 
 \begin{itemize}
 
-\item \textbf{Well-defined intervention and outcome}. This requires consistent timing, dosage, and measurement each period. This is automatically guaranteed under a quasi-experimental design. 
+\item \textbf{Well-defined intervention and outcome}. This requires consistent timing, dosage, and measurement each period. 
 
 \item \textbf{Consistency.} Denote $A_{it}$ as the treatment or exposure for person $i$ at time $t$. Define $Y_{it}$ as being the outcome at time $t$. Then, if $A_{it} = a$, $Y_{it} = Y_{it}(a)$. In other words, there is no interference from \emph{other} periods unless modeled. 
 
@@ -257,9 +256,9 @@ Ideally, to test this hypothesis, we would run a double-blind N-of-1 study with 
 
 \end{itemize}
 
-%Note that the methodological conditions imposed by the BSTS differ from the causal conditions imposed by trial emulation. One is associated with methodological concerns; the other, with causal identification. Under these combined conditions, the PATE,
+%Note that the methodological conditions imposed by the BSTS differ from the causal conditions imposed by trial emulation. One is associated with methodological concerns; the other, with causal identification. Under these combined conditions, the ITE,
 %\[
-%\text{PATE}_i = \mathbb{E}\left[ Y_{it}(1) - Y_{it}(0) \mid \mathcal{H}_{it} \right]
+%\text{ITE}_i = \mathbb{E}\left[ Y_{it}(1) - Y_{it}(0) \mid \mathcal{H}_{it} \right]
 %\]
 %\textbf{has potential to be identified}, in which 
 %\[
@@ -334,7 +333,7 @@ Finally -- and perhaps more importantly -- it may be possible to aggregate these
 \noindent\rule{\linewidth}{0.4pt}
 
 \noindent
-\textbf{Data:} The only way to conduct this study is to run some manipulation of an experiment which requires lots of funding, planning, and development. 
+\textbf{Data:} The only way to conduct this study is to run some manipulation of an experiment.
 
 \noindent\rule{\linewidth}{0.4pt}
 
