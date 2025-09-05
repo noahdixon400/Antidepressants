@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.27)  28 AUG 2025 13:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.27)  3 SEP 2025 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,23 +6,10 @@ entering extended mode
 (9-4-25 Research Proposal.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
-
-(C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticl
-e.cls
-Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
-
-(C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\size17.cl
-o
-File: size17.clo 1999/11/11 NON-Standard LaTeX file (size option)
-)
-(C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
-Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-\big@size=\dimen140
+(C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count187
 \c@section=\count188
@@ -34,7 +21,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \c@table=\count194
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-\bibindent=\dimen141
+\bibindent=\dimen140
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.st
 y
@@ -60,11 +47,11 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen142
+\ex@=\dimen141
 ))
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen143
+\pmbraise@=\dimen142
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
@@ -86,7 +73,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen144
+\big@size=\dimen143
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count267
@@ -104,12 +91,12 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count272
 \maxfields@=\count273
 \andhelp@=\toks20
-\eqnshift@=\dimen145
-\alignsep@=\dimen146
-\tagshift@=\dimen147
-\tagwidth@=\dimen148
-\totwidth@=\dimen149
-\lineht@=\dimen150
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
 \@envbody=\toks21
 \multlinegap=\skip51
 \multlinetaggap=\skip52
@@ -154,8 +141,8 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count274
 \calc@Bcount=\count275
-\calc@Adimen=\dimen151
-\calc@Bdimen=\dimen152
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
 \calc@Askip=\skip56
 \calc@Bskip=\skip57
 LaTeX Info: Redefining \setlength on input line 80.
@@ -168,16 +155,16 @@ sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count277
-\l_MT_multwidth_dim=\dimen153
+\l_MT_multwidth_dim=\dimen152
 \origjot=\skip59
-\l_MT_shortvdotswithinadjustabove_dim=\dimen154
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen155
-\l_MT_above_intertext_sep=\dimen156
-\l_MT_below_intertext_sep=\dimen157
-\l_MT_above_shortintertext_sep=\dimen158
-\l_MT_below_shortintertext_sep=\dimen159
+\l_MT_shortvdotswithinadjustabove_dim=\dimen153
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen154
+\l_MT_above_intertext_sep=\dimen155
+\l_MT_below_intertext_sep=\dimen156
+\l_MT_above_shortintertext_sep=\dimen157
+\l_MT_below_shortintertext_sep=\dimen158
 \xmathstrut@box=\box53
-\xmathstrut@dim=\dimen160
+\xmathstrut@dim=\dimen159
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\
 tikz.sty
@@ -188,8 +175,8 @@ cs.sty
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
 futil-common.tex
 \pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen161
-\pgfutil@tempdimb=\dimen162
+\pgfutil@tempdima=\dimen160
+\pgfutil@tempdimb=\dimen161
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
 futil-latex.def
@@ -226,8 +213,8 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 x.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen163
-\Gin@req@width=\dimen164
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pg
 fsys.sty
@@ -244,16 +231,16 @@ fkeys.code.tex
 fkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks33
 ))
-\pgf@x=\dimen165
-\pgf@y=\dimen166
-\pgf@xa=\dimen167
-\pgf@ya=\dimen168
-\pgf@xb=\dimen169
-\pgf@yb=\dimen170
-\pgf@xc=\dimen171
-\pgf@yc=\dimen172
-\pgf@xd=\dimen173
-\pgf@yd=\dimen174
+\pgf@x=\dimen164
+\pgf@y=\dimen165
+\pgf@xa=\dimen166
+\pgf@ya=\dimen167
+\pgf@xb=\dimen168
+\pgf@yb=\dimen169
+\pgf@xc=\dimen170
+\pgf@yc=\dimen171
+\pgf@xd=\dimen172
+\pgf@yd=\dimen173
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count278
@@ -320,7 +307,7 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 util.code.tex)
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
 parser.code.tex
-\pgfmath@dimen=\dimen175
+\pgfmath@dimen=\dimen174
 \pgfmath@count=\count285
 \pgfmath@box=\box55
 \pgfmath@toks=\toks37
@@ -356,32 +343,32 @@ code.tex)
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen176
-\pgf@picmaxx=\dimen177
-\pgf@picminy=\dimen178
-\pgf@picmaxy=\dimen179
-\pgf@pathminx=\dimen180
-\pgf@pathmaxx=\dimen181
-\pgf@pathminy=\dimen182
-\pgf@pathmaxy=\dimen183
-\pgf@xx=\dimen184
-\pgf@xy=\dimen185
-\pgf@yx=\dimen186
-\pgf@yy=\dimen187
-\pgf@zx=\dimen188
-\pgf@zy=\dimen189
+\pgf@picminx=\dimen175
+\pgf@picmaxx=\dimen176
+\pgf@picminy=\dimen177
+\pgf@picmaxy=\dimen178
+\pgf@pathminx=\dimen179
+\pgf@pathmaxx=\dimen180
+\pgf@pathminy=\dimen181
+\pgf@pathmaxy=\dimen182
+\pgf@xx=\dimen183
+\pgf@xy=\dimen184
+\pgf@yx=\dimen185
+\pgf@yy=\dimen186
+\pgf@zx=\dimen187
+\pgf@zy=\dimen188
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen190
-\pgf@path@lasty=\dimen191
+\pgf@path@lastx=\dimen189
+\pgf@path@lasty=\dimen190
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen192
-\pgf@shorten@start@additional=\dimen193
+\pgf@shorten@end@additional=\dimen191
+\pgf@shorten@start@additional=\dimen192
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcorescopes.code.tex
@@ -394,14 +381,14 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen194
+\pgflinewidth=\dimen193
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen195
-\pgf@pt@y=\dimen196
-\pgf@pt@temp=\dimen197
+\pgf@pt@x=\dimen194
+\pgf@pt@y=\dimen195
+\pgf@pt@temp=\dimen196
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcorequick.code.tex
@@ -418,12 +405,12 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen198
+\pgfarrowsep=\dimen197
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
 gfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen199
+\pgf@max=\dimen198
 \pgf@sys@shading@range@num=\count288
 \pgf@shadingcount=\count289
 )
@@ -464,8 +451,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\
 pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen256
-\pgf@nodesepend=\dimen257
+\pgf@nodesepstart=\dimen199
+\pgf@nodesepend=\dimen256
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\
 pgfcomp-version-1-18.sty
@@ -484,8 +471,8 @@ ty
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
 ffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen258
-\pgffor@skip=\dimen259
+\pgffor@iter=\dimen257
+\pgffor@skip=\dimen258
 \pgffor@stack=\toks40
 \pgffor@toks=\toks41
 ))
@@ -497,16 +484,16 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 flibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count290
-\pgfplotmarksize=\dimen260
+\pgfplotmarksize=\dimen259
 )
-\tikz@lastx=\dimen261
-\tikz@lasty=\dimen262
-\tikz@lastxsaved=\dimen263
-\tikz@lastysaved=\dimen264
-\tikz@lastmovetox=\dimen265
-\tikz@lastmovetoy=\dimen266
-\tikzleveldistance=\dimen267
-\tikzsiblingdistance=\dimen268
+\tikz@lastx=\dimen260
+\tikz@lasty=\dimen261
+\tikz@lastxsaved=\dimen262
+\tikz@lastysaved=\dimen263
+\tikz@lastmovetox=\dimen264
+\tikz@lastmovetoy=\dimen265
+\tikzleveldistance=\dimen266
+\tikzsiblingdistance=\dimen267
 \tikz@figbox=\box61
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
@@ -535,7 +522,7 @@ Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box65
-\shadowsize=\dimen269
+\shadowsize=\dimen268
 \@Sbox=\box66
 \do@VerbBox=\toks42
 \the@fancyput=\toks43
@@ -609,7 +596,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count299
 )
-\@linkdim=\dimen270
+\@linkdim=\dimen269
 \Hy@linkcounter=\count300
 \Hy@pagecounter=\count301
 
@@ -643,7 +630,7 @@ Package hyperref Info: Bookmarks ON on input line 4448.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4786.
-\XeTeXLinkMargin=\dimen271
+\XeTeXLinkMargin=\dimen270
 
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.st
 y
@@ -655,8 +642,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count304
-\Field@Width=\dimen272
-\Fld@charsize=\dimen273
+\Field@Width=\dimen271
+\Fld@charsize=\dimen272
 Package hyperref Info: Hyper figures OFF on input line 6065.
 Package hyperref Info: Link nesting OFF on input line 6070.
 Package hyperref Info: Hyper index ON on input line 6073.
@@ -707,8 +694,8 @@ sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box67
 \sift@deathcycles=\count310
-\@vwid@loff=\dimen274
-\@vwid@roff=\dimen275
+\@vwid@loff=\dimen273
+\@vwid@roff=\dimen274
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.
 sty
@@ -854,13 +841,13 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip128
 \multirow@cntb=\count319
 \multirow@dima=\skip129
-\bigstrutjot=\dimen276
+\bigstrutjot=\dimen275
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen277
+\col@sep=\dimen276
 \ar@mcellbox=\box74
-\extrarowheight=\dimen278
+\extrarowheight=\dimen277
 \NC@list=\toks46
 \extratabsurround=\skip130
 \backup@length=\skip131
@@ -873,14 +860,14 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.s
 ty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen279
-\captionmargin=\dimen280
-\caption@leftmargin=\dimen281
-\caption@rightmargin=\dimen282
-\caption@width=\dimen283
-\caption@indent=\dimen284
-\caption@parindent=\dimen285
-\caption@hangindent=\dimen286
+\caption@tempdima=\dimen278
+\captionmargin=\dimen279
+\caption@leftmargin=\dimen280
+\caption@rightmargin=\dimen281
+\caption@width=\dimen282
+\caption@indent=\dimen283
+\caption@parindent=\dimen284
+\caption@hangindent=\dimen285
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count320
@@ -902,12 +889,12 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.st
 y
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen287
-\ESO@tempdimb=\dimen288
+\ESO@tempdima=\dimen286
+\ESO@tempdimb=\dimen287
 )
-\AM@pagewidth=\dimen289
-\AM@pageheight=\dimen290
-\AM@fboxrule=\dimen291
+\AM@pagewidth=\dimen288
+\AM@pageheight=\dimen289
+\AM@fboxrule=\dimen290
 
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.
 def
@@ -946,11 +933,11 @@ Package: ifnextok 2011/06/27 v0.3 test next token (UL)
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen292
-\TX@old@table=\dimen293
-\TX@old@col=\dimen294
-\TX@target=\dimen295
-\TX@delta=\dimen296
+\TX@col@width=\dimen291
+\TX@old@table=\dimen292
+\TX@old@col=\dimen293
+\TX@target=\dimen294
+\TX@delta=\dimen295
 \TX@cols=\count331
 \TX@ftn=\toks52
 )
@@ -973,7 +960,7 @@ Package cleveref Info: `amsthm' support loaded on input line 3026.
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count332
-\U@D=\dimen297
+\U@D=\dimen296
 \l@unhyphenated=\language79
 
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.d
@@ -1053,7 +1040,7 @@ tex))
 sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip134
-\enit@outerparindent=\dimen298
+\enit@outerparindent=\dimen297
 \enit@toks=\toks54
 \enit@inbox=\box78
 \enit@count@id=\count345
@@ -1065,12 +1052,12 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box79
 \beforetitleunit=\skip135
 \aftertitleunit=\skip136
-\ttl@plus=\dimen299
-\ttl@minus=\dimen300
+\ttl@plus=\dimen298
+\ttl@minus=\dimen299
 \ttl@toksa=\toks55
-\titlewidth=\dimen301
-\titlewidthlast=\dimen302
-\titlewidthfirst=\dimen303
+\titlewidth=\dimen300
+\titlewidthlast=\dimen301
+\titlewidthfirst=\dimen302
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -1085,33 +1072,33 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \UL@hyphenbox=\box83
 \UL@skip=\skip137
 \UL@hook=\toks58
-\UL@height=\dimen304
+\UL@height=\dimen303
 \UL@pe=\count348
-\UL@pixel=\dimen305
+\UL@pixel=\dimen304
 \ULC@box=\box84
 Package: ulem 2019/11/18
-\ULdepth=\dimen306
+\ULdepth=\dimen305
 )
 (C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.
 sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen307
-\lightrulewidth=\dimen308
-\cmidrulewidth=\dimen309
-\belowrulesep=\dimen310
-\belowbottomsep=\dimen311
-\aboverulesep=\dimen312
-\abovetopsep=\dimen313
-\cmidrulesep=\dimen314
-\cmidrulekern=\dimen315
-\defaultaddspace=\dimen316
+\heavyrulewidth=\dimen306
+\lightrulewidth=\dimen307
+\cmidrulewidth=\dimen308
+\belowrulesep=\dimen309
+\belowbottomsep=\dimen310
+\aboverulesep=\dimen311
+\abovetopsep=\dimen312
+\cmidrulesep=\dimen313
+\cmidrulekern=\dimen314
+\defaultaddspace=\dimen315
 \@cmidla=\count349
 \@cmidlb=\count350
-\@aboverulesep=\dimen317
-\@belowrulesep=\dimen318
+\@aboverulesep=\dimen316
+\@belowrulesep=\dimen317
 \@thisruleclass=\count351
 \@lastruleclass=\count352
-\@thisrulewidth=\dimen319
+\@thisrulewidth=\dimen318
 )
 Package csquotes Info: Allocating character ".
 LaTeX Font Info:    Overwriting math alphabet `\mathbx' in version `bold'
@@ -1120,7 +1107,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbx' in version `bold'
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-No file "9-4-25 Research Proposal".aux.
+
+LaTeX Warning: Unused global option(s):
+    [doublespace].
+
+(9-4-25 Research Proposal.aux)
 \openout1 = `"9-4-25 Research Proposal.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -1146,13 +1137,13 @@ LaTeX Font Info:    ... okay on input line 86.
 df.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count353
-\scratchdimen=\dimen320
+\scratchdimen=\dimen319
 \scratchbox=\box85
 \nofMPsegments=\count354
 \nofMParguments=\count355
 \everyMPshowfont=\toks59
 \MPscratchCnt=\count356
-\MPscratchDim=\dimen321
+\MPscratchDim=\dimen320
 \MPnumerator=\count357
 \makeMPintoPDFobject=\count358
 \everyMPtoPDFconversion=\toks60
@@ -1168,6 +1159,7 @@ sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 86.
+ (9-4-25 Research Proposal.out) (9-4-25 Research Proposal.out)
 \@outlinefile=\write5
 \openout5 = `"9-4-25 Research Proposal.out"'.
 
@@ -1220,17 +1212,99 @@ Package amsthm Warning: Unknown theoremstyle `example' on input line 192.
 
 Package amsthm Warning: Unknown theoremstyle `conclusion' on input line 196.
 
-No file "9-4-25 Research Proposal".toc.
-\tf@toc=\write6
-\openout6 = `"9-4-25 Research Proposal.toc"'.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+LaTeX Font Info:    Trying to load font information for U+msa on input line 206
+.
+(C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 206
+.
 
+(C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 20
+6.
+
+(C:\Users\noah.dixon\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Missing character: There is no â in font cmti12!
+Missing character: There is no € in font cmti12!
+Missing character: There is no ™ in font cmti12!
 [1]
+Overfull \hbox (16.30418pt too wide) in paragraph at lines 217--218
+[]\OT1/cmr/m/it/12 Identification: \OT1/cmr/m/n/12 Hinges on the method-olog-i-
+cal frame-work pro-posed in (Broder-
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.213 \end{document}
-                     [2] (9-4-25 Research Proposal.aux)
+l.222 
+       [2]
+Overfull \hbox (9.98166pt too wide) in paragraph at lines 223--224
+[]\OT1/cmr/bx/n/12 Structural sta-blil-ity of the coun-ter-fac-tual model. \OT1
+/cmr/m/n/12 Us-ing a Bayesian
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.238 
+       [3]
+Overfull \hbox (3.47737pt too wide) in paragraph at lines 248--250
+\OT1/cmr/m/it/12 may \OT1/cmr/m/n/12 be iden-ti-fied, in which $\OMS/cmsy/m/n/1
+2 H[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 ;
+ \OML/cmm/m/it/12 A[]; :::; A[]\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 Y[]; :::Y[]\O
+T1/cmr/m/n/12 ; \OML/cmm/m/it/12 :::L[]:::L[]\OMS/cmsy/m/n/12 g$
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.250 
+       [4]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.270 \item $
+             \alpha_t$ represents the coefficients associated with each port...
+[5]
+Overfull \hbox (59.10991pt too wide) in paragraph at lines 285--287
+\OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 X[] \OT1/cmr/m/n/12 = [[][]\OML/cmm/m/i
+t/12 ; [][]; [][]; [][]$\OT1/cmr/m/n/12 ,
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.287 \[
+         [6]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.307 \noindent
+                [7]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.354 \end{document}
+                     [8] (9-4-25 Research Proposal.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1239,32 +1313,42 @@ L3 programming layer <2024-01-04>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `"9-4-25 Research Proposal".out' has chang
-ed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"9-4-25 Research Proposal".out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  9534070C232AA0A3F935CB7C3E3F8D46;35.
+Package rerunfilecheck Info: File `"9-4-25 Research Proposal".out' has not chan
+ged.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29672 strings out of 474485
- 562355 string characters out of 5741374
- 1927542 words of memory out of 5000000
- 51470 multiletter control sequences out of 15000+600000
- 560944 words of font info for 46 fonts, out of 8000000 for 9000
+ 29723 strings out of 474485
+ 561638 string characters out of 5741374
+ 1932542 words of memory out of 5000000
+ 51492 multiletter control sequences out of 15000+600000
+ 567709 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,5n,107p,508b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmcsc10.pfb><C:/Users/noah.dixon/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/noah.dixon/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "9-4-25 Research Proposal.pdf" (3 pages, 46502 bytes).
+ 102i,8n,107p,2083b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\noah.dixon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
+crm1200.pk><C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb><C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/noah.dixon/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/noah.dixon/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/n
+oah.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b><C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/noah.dixon/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/noah.dixon/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/noa
+h.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+<C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmti12.pfb><C:/Users/noah.dixon/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb>
+Output written on "9-4-25 Research Proposal.pdf" (9 pages, 189347 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

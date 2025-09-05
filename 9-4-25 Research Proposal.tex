@@ -7,17 +7,17 @@
 %Here are the various packages I use. Some may be duplicated. 
 \usepackage{enumerate}
 \usepackage{etoolbox}
-\usepackage{amsmath,amsthm,amssymb} %this is THE math package
+\usepackage{amsmath,amsthm,amssymb} % math package
 \usepackage{mathtools} %to beef up the above package, more math!
 \usepackage{tikz} %for drawing 
 \usepackage{graphicx} %for including graphics
 \usepackage{fancybox} %for some nice formatting options
-\usepackage{hyperref}[hidelinks] %for referencing
+\usepackage[hidelinks]{hyperref} %for referencing
 %hidelinks removes red and green boxes
 \usepackage{varwidth} %for some nice width control
 \usepackage{mdframed} %for framed environments
 \usepackage{mathrsfs} %more math fonts
-\usepackage{xcolor} %THE colour package
+\usepackage{xcolor} %color package
 \usepackage{setspace}
 \usepackage{multirow,array}
 \usepackage{caption}
@@ -28,7 +28,6 @@
 %\usepackage[paper=a3paper]{geometry}
 \usepackage{tabularx}
 \usepackage{cleveref}
-%attempting to capitalize citations
 \usepackage [english]{babel}
 \usepackage [autostyle, english = american]{csquotes}
 \usepackage{xstring}
@@ -39,7 +38,7 @@
 \usepackage{titlesec}
 \usepackage{float}
 \usepackage[normalem]{ulem}
-\usepackage{booktabs} % Include in preamble
+\usepackage{booktabs} %include in preamble
 %Here are the various packages I use. Some may be duplicated. 
 
 
@@ -47,7 +46,7 @@
 
 
 
-%Not sure what these do, but they get the job done%
+%Define colors and symbols%
 %\usepackage[notes,backend=biber]{biblatex-chicago}
 %\usepackage[authordate-trad,backend=biber]{biblatex-chicago}
 \MakeOuterQuote{"}
@@ -74,7 +73,7 @@
 %\usepackageA{hyphenat}
 \DeclareCaptionLabelFormat{blank}{}
 \let\cleardoublepage\relax
-%Not sure what these do, but they get the job done%
+%Define colors and symbols%
 
 
 
@@ -197,51 +196,161 @@
 \newtheorem{conclusion}[theorem]{Conclusion}
 
 
-\noindent
-\textbf{Question:} Is it possible to deduce causality, at the individual level, when administering antidepressants for depression? 
+
+
+
+
+\section{Research Proposal}
+\noindent\textbf{Question:} Is it possible to infer causality, at the individual level, when administering antidepressants for depressive symptoms? 
 
 \noindent\rule{\linewidth}{0.4pt}
 
 \noindent
-\textbf{Motivation:} At the individual level, mental health is diagnosed by weekly tracking an individual’s responses to the HAM-D (Hamilton Depression Rating Scale).\footnote{Although recently, new tests -- like the MADRS (Montgomery-Asberg Depression Rating Scale), QIDS-C (Clinician-rated Quick Inventory of Depressive Symptomatology), and PHQ-9 (Patient Health Questionnaire) -- have gained traction, each successive test placing more emphasis on the individual.} At the population level, tests are validated using an RCT, which is subsequently estimated using an MMRM model. However, the HAM-D measure (or other alternative measures) is currently utilized such that \emph{improvements in baseline scores are treated as causal}. Clearly, at the individual level, this test does not account for interdependencies across time, individual-level shocks, any form of biometric tracking, most forms of measurement error, and only a small subset of adverse effects. Further, the consensus in the literature is that antidepressants are only beneficial, in the long run, for individuals with severe depression (Fournier et al. 2010; Kirsch et al. 2008), with the effect sizes being statistically small (Cipriani et al. 2018) or negligible for those with small-to-mild depression. Around 11-13\% of adults report using antidepressants, but only 2-3\% of individuals report having severe depression (Brody \& Gu 2020; Villarroel \& Terlizzi 2020). Further, Wong, Motulsky, and Eugale (2016) report that over 50\% of individuals may be using antidepressants for something other than depression. \emph{And all of this assumes that an individual’s utility is inextricably linked to their score on the test.} There are many reasons to believe that the individual-level data neglected under an MMRM model is actually an integral piece of the puzzle, and thus there is a necessity, in the literature and in the market, to introduce rigorous statistical methodology to deduce the causal impact of antidepressants on a \emph{specific} individual. 
+
+%\noindent\textbf{Main Idea:} More generally, I am the floating the methodological idea of: (i) uncovering causality on the individual level using quasi-experimental data, (ii) integrating systematic individual-level heterogeneity to uncover population-level data, and (iii) integrating utility functions to model adverse effects as opposed to traditional health-based outcomes.
+%I am not particularly tied to this specific topic, but rather its underlying methodology and applications. 
+
+\noindent\textbf{Main Idea:}
+Ideally, to test this hypothesis, we would run a double-blind N-of-1 study with periodic, blocked randomization. However, with antidepressants, this is infeasible, due to biological concerns (e.g., high stabilization and washout periods) and ethical concerns (e.g., suicidal ideation). Fundamentally, this restricts analysis to the aggregate level -- at which point, time-varying heterogeneity is stripped away. Consequently, in order to evaluate the individual-level effect, we need to treat the data as being quasi-experimental. Traditionally, this is where the analysis stopped -- there was no plausible way to extract this much data. However, recent technological advancements have altered the bounds of what is permissible. In Brodersen et al. (2015), for instance, they introduce a Bayesian Structural Time Series (BSTS) model to estimate the individual-level counterfactual time series had the intervention not occurred, which they subsequently apply to marketing data. Additionally, in Robins (1986), he introduces the g-method approach -- an approach to individual-level causal inference when there is an abundance of longitudinal data. One serves as a methodological framework; the other as a causal framework. The idea is to \text{``}layer'' one on top of the other, to construct an individual-level counterfactual that uses a conglomerate utility measure rather than a single outcome variable, and which can subsequently be used to identify the personal average treatment effect (PATE). From here -- and assuming a true RCT is conducted -- it may be possible to reconstruct the ATE, with individual-level heterogeneity. 
+
+
+\newpage
+\section{Basic Framework}
+
+\noindent\textbf{Motivation:} At the individual level, mental health is diagnosed by weekly tracking an individual’s responses to the HAM-D (Hamilton Depression Rating Scale).\footnote{Although recently, new tests -- like the MADRS (Montgomery-Asberg Depression Rating Scale), QIDS-C (Clinician-rated Quick Inventory of Depressive Symptomatology), and PHQ-9 (Patient Health Questionnaire) -- have gained traction, each successive test placing more emphasis on the individual.} At the population level, tests are validated using an RCT, which is subsequently estimated using an MMRM model. However, while such metrics establish average efficacy, they may not translate to \emph{individual} responses. Fundamentally, these measures do not account for interdependencies across time, individual-level shocks, any form of biometric tracking, most forms of measurement error, and only a small subset of adverse effects. Further, the consensus in the literature is that antidepressants are only beneficial, in the long run, for individuals with severe depression (Fournier et al. 2010; Kirsch et al. 2008), with the effect sizes being statistically small (Cipriani et al. 2018) or negligible for those with small-to-mild depression. Around 11-13\% of adults report using antidepressants, but only 2-3\% of individuals report having severe depression (Brody \& Gu 2020; Villarroel \& Terlizzi 2020). Further, Wong, Motulsky, and Eguale (2016) report that over 50\% of individuals may be using antidepressants for something other than depression. \emph{And all of this assumes that an individual’s utility is inextricably linked to their score on the test.} There are many reasons to believe that the individual-level data neglected under an MMRM model is an integral piece of the puzzle, and thus there is a necessity, in the literature and in the market, to introduce rigorous statistical methodology to deduce the causal impact of antidepressants on a \emph{specific} individual. 
 
 \noindent\rule{\linewidth}{0.4pt}
 
 \noindent
-\textbf{Ideal Experiment (periodic randomization is possible):} Run a double-blind N-of-1 trial (an experiment on a single individual, in which neither the individual receiving treatment nor the prescribing therapist know the level of medication being received, at any point in time) with varying levels of medication (low, standard, high) on a week-to-week basis. For individuals who stop taking medication, information should still be tracked, to properly evaluate the washout phase. Analysis, in this instance, does not require individual-level covariates (but does require an abundance of pre-treatment values), although certain covariates should be tracked \emph{for the purpose of dealing with missing data.} The outcomes tracked are tri-daily (morning, afternoon, evening) \text{``}mood'' scores and weekly PHQ-9 scores, in conjunction with “richer” measures (sleep, step count, mood diary, adverse events, and biomarkers). The exact blend of covariates requires meticulous thought. 
+\textbf{Experimental Design} 
+
+\emph{Outcomes:} The outcomes tracked are tri-daily (morning, afternoon, evening) \text{``}mood'' scores and weekly HAM-D scores, in conjunction with \text{``}richer'' measures, including: sleep, step count, mood diary, adverse events, and biomarkers. More generally, if the data is saturated enough, we \emph{may} be able to identify the PATE, absent of the ATE.
 
 \noindent
 
-\emph{Identification:} Hinges on classic causal inference principles -- consistency, sequential ignorability, positivity (Hernán \& Robins 2020) -- adapted to N-of-1 settings. Design features like washout periods (or proper lagged modeling), randomization, and blinding (or double-blinding, in this instance) are essential for internal validity in single-patient trials (Lillie et al. 2011; Duan et al. 2013; Hawksworth et al. 2024). For time-series treatment modeling, Bayesian Structural Time-Series (BSTS) methods impose stationarity and pre-intervention stability/post-intervention stability -- assumptions that must be carefully justified (Brodersen et al. 2015). Under these combined conditions, the Personal Average Treatment Effect (PATE) may be identified. Identification under these assumptions requires a rigorous proof, as it is not exactly a standard model setup. 
+\emph{Methodology:} Hinges on the methodological framework proposed in (Brodersen et al. 2015): 
 
-%Requires well-defined interventions/outcomes, consistency, sequential ignorability, positivity, sequential modeling controls, missing data at random (MAR), and stationarity. In a randomized N-of-1 trial, sequential ignorability and positivity hold by design. Consistency depends on adherence, accurate measurement, and unambiguous treatment definitions. Stationarity requires careful thought about whether the sampled time periods (e.g., weekdays vs weekends, stressful vs calm) represent the contexts of interest. Lag modeling requires pharmacological knowledge of the treatment. Missing data must be minimized or modeled appropriately. Under these conditions, the PATE (personal average treatment effect) is identified. Identification under these assumptions requires a proof, as it is not exactly a standard model setup. 
+\begin{itemize}
+
+\item \textbf{No anticipation.} This is hard to justify, in practice. An individual may alter their behavior in anticipation of the medicine. One way to obviate this is to randomize when an individual begins taking the medication. For example, the individual is told that they will begin taking the medication sometime over the course of the month, but they do not know exactly when this will occur. This is something that could reasonably be approved by IRB. 
+
+\item \textbf{Structural stability of the counterfactual model.} Using a Bayesian Structural Time Series (BSTS) model helps make a sufficient case for this. In practice, it is impossible to justify. One pitfall of this model is that we can never fully recover an unbiased estimate. However, we can recover a \emph{plausible estimate}. At the individual-level, this is probably good enough. 
+
+\item \textbf{No concurrent interventions.} If an individual begins taken epileptic medication at the same time, it is impossible to extract the true effect of the antidepressant. However, it is still possible to extract the aggregate effect of the antidepressant and epileptic medication, given that the other assumptions hold. 
+
+\item \textbf{Sufficient pre-intervention data.} This requires collecting a sufficient amount of data, \emph{prior} to treatment. 
+
+\end{itemize}
+
+\emph{Identification:} The BSTS assumptions have nothing to do with identification. In order to identify, we need to layer on a causal framework. More generally, the basic causal assumptions, as stated in Hernán and Robins (2020), are:
+
+\begin{itemize}
+
+\item \textbf{Well-defined intervention and outcome}. This requires consistent timing, dosage, and measurement each period. This is automatically guaranteed under a quasi-experimental design. 
+
+\item \textbf{Consistency.} Denote $A_{it}$ as the treatment or exposure for person $i$ at time $t$. Define $Y_{it}$ as being the outcome at time $t$. Then, if $A_{it} = a$, $Y_{it} = Y_{it}(a)$. In other words, there is no interference from \emph{other} periods unless modeled. 
+
+\item \textbf{Positivity.} For all relevant histories, $0 < \text{Pr}(A_{it} = 1| H_{it}) < 1$. This is not necessarily guaranteed, under the counterfactual argument. 
+
+\item \textbf{Sequential Exchangeability.}  Define \[H_{it} = \{ C_i; A_{i,1}, ..., A_{i,t-1}; Y_{i1}, ... Y_{i, t-1}; ... L_{i1} ... L_{i,t}\] as being the \emph{history} for a person $i$ at time $t$, where $C_i$ represents baseline covariates, $A_{i, 1:t-1}$ represents past treatments/doses, $Y_{i, 1: t-1}$ represents past outcomes/symptoms, and $L_{is}$ represents time-varying covariates measured directly before the $t$'th decision. Then, we require that $A_{it} \perp\!\!\!\perp (Y_{i,t}^{(0)}, Y_{i,t}^{(1)}) \mid H_{it}$. This is the hardest assumption to justify. 
+%In practice, this is a strong assumption, so we use $A_{it} \perp\!\!\!\perp \Big\{\, Y_{is}(\bar{a}_{i,s}) : s \ge t,\ \bar{a}_{i,t-1} \mid H_{it} \}$ instead.
+
+\end{itemize}
+
+%Note that the methodological conditions imposed by the BSTS differ from the causal conditions imposed by trial emulation. One is associated with methodological concerns; the other, with causal identification. Under these combined conditions, the PATE,
+%\[
+%\text{PATE}_i = \mathbb{E}\left[ Y_{it}(1) - Y_{it}(0) \mid \mathcal{H}_{it} \right]
+%\]
+%\textbf{has potential to be identified}, in which 
+%\[
+%\mathcal{H}_{it} = \{ C_i; A_{i,1}, ..., A_{i,t-1}; Y_{i1}, ... Y_{i, t-1}; ... L_{i1} ... L_{i,t-1} \}
+%\]
+%represents the history, where $C_i$ represents baseline covariates, $A_{i, 1:t-1}$ represents past treatments/doses, $Y_{i, 1: t-1}$ represents past outcomes/symptoms, and $L_{i, 1: t-1}$ represents time-varying covariates measured directly before the $t$'th decision. \textbf{Identification under these assumptions requires a proof, as this is not a standard model setup.} For instance, in Brodersen et al. (2015), they evaluate multiple individuals at the same time and there goal is not causal inference. Any form of causal interpretation also requires that $\mathcal{H}_{t-1}$ is sufficiently accounted for. Once again, the underlying goal is to \emph{infer} some semblance of causal impact, within a reasonable confidence interval -- not deduce an entirely unbiased estimate.
+
+
 
 \noindent
 
-\emph{Estimation:} Should be conducted using a manipulation of the Bayesian Structural Time Series (BSTS) model, as shown in Broderson (2015). Rather than evaluating each estimated measure, in isolation, a conglomerate measure of utility should be estimated, based on an individual’s ranking of each respective metric. For instance, 
+\emph{Estimation:} The standard BSTS model, as shown in (Brodersen et al. 2015), is given by a system of equations: 
+\[
+Y_t = Z_t^\top \alpha_t + \epsilon_t \qquad \text{[Outcome Equation]},
+\]
+\[
+\alpha_{t+1} = T_t \alpha_t + R_t \eta_t \qquad \text{[State Equation]},
+\]
+where $\epsilon_t \sim \mathcal{N}(0,\sigma_t^2)$ and $n_t \sim \mathcal{N}(0,Q_t)$ are independent of all other unknowns. The first equation is the outcome equation and represents what we are actually controlling for. 
+
+The variables are represented by: 
+\begin{itemize}
+\item $Y_t$ is a scalar, which represents the PHQ-9 scores. It can also include other measures. If running a joint model, this opens up an entire other can of worms.  
+
+\item $Z_t$ is essentially a control matrix, which includes a dummy variable if treated. For instance, $Z_t = [1,D_t, S_{1,t}, X_{2,t}]'$ represents the case in which a set of seasonal components are included, as well as a set of covariates. 
+
+\item $\alpha_t$ represents the coefficients associated with each portion of the control matrix. For instance, in the previous example, the corollary $\alpha_t = [\mu_t, \tau, \beta_1, \beta_2]$, where $\mu_t$ represents an individual's underlying mental health trajectory absent of treatment and $\tau$ represents the inferred causal impact of the treatment itself. Obviously, the question is: \emph{how do we deal with $\mu_t$.} This is where the state equation comes into play. 
+
+\item $\alpha_{t+1}$ governs how the latent states evolve over time. That is, how does an untreated individual evolve over time. This is essential in modeling the counterfactual. 
+
+\item $T_t$ is a transition matrix, which tells you how the state evolves, deterministically, over time. The degree to which we model trends, in general, is reflected inside this. \emph{It must match the seasonal trends reflected in $\alpha_t$.}
+
+\item $R_t$ determines which states receive noise and how much noise they receive. 
+
+\item $Q_t$ represents the state disturbance covariance matrix, and controls how much the latent components are allowed to evolve over time.
+
+\end{itemize}
+
+To model this more specifically, suppose the outcome equation is given as: 
+\[
+Y_t = \mu_t + \tau \cdot D_t + X_{t-1}\beta + \gamma_t + \epsilon_t,
+\]
+where $X_{t-1} = [\text{Sleep}_{t-1}, \text{Exercise}_{t-1}, \text{Average Heart Rate}_{t-1}, \text{Environmental Stressors}_{t-1}$, $\gamma_t = \gamma_t^{(\text{Week})} + \gamma_t^{(\text{Circadian})} + \gamma_t^{(\text{Seasons})} $ represents latent seasonal effects, and $\mu_t = \mu_{t-1} + \eta_t$ represents how a person's depression would naturally evolve over time, absent of medication or seasonal cycles. In fact, the distribution of $\eta_t$ can align with aggregate population data with certain priors. Note that each $\gamma_t^{(\cdot)}$ has its own transition matrix, such that $\gamma_t(T) = -\sum_{j=1}^{T-1}\gamma_t^{(j)}$. Essentially, these work as dummy variables that are included in the outcome equation, but which are estimated with some degree of uncertainty; they influence both the outcome equation and the state equation. $Q_t$ is either  \emph{learned} through posterior sampling, or estimated from the data, typically using MLE. 
+
+\bigskip
+
+\emph{g-methods:} In the process of learning. 
+
+
+\emph{Utility:} Rather than evaluating each estimated measure, in isolation, a conglomerate measure of utility should be estimated, based on an individual's ranking of each respective metric. As an example, 
 \[
 U_i = W_A \cdot \text{Sleep} + W_B \cdot \text{PHQ-9} + W_C \cdot \text{Fulfillment},
 \]
-where $W_A$ represents arbitrary weights such that the $\sum_{j = 1}^JW_J = 1$ and $j$ represents the number of categories. In practice, the individuals themselves determine the weights \emph{as well as the categories}. However, it may be that an individual's utility functions changes, as they take the drug.
+where $W_A$ represents arbitrary weights such that the $\sum_{j = 1}^JW_J = 1$ and $j$ represents the number of categories. Likely, using machine learning techniques is the best way to approach this. 
+
+
 
 \noindent
 
-\emph{Potential Issues:} The biggest potential issue, of course, is that periodic randomization (altering, in no particular order, from low dosage to medium dosage to high dosage) is an ethical issue that may not pass IRB design. However, even if periodic randomization fails, one-shot randomization or an observational setting (with saturated data) may still allow identification -- although there needs to be careful consideration in constructing the individual-level synthetic control. Another issue is that the process may put \text{``}undue burden'' on the participant itself, which could cause the MAR assumption to be violated. 
 
 \noindent\rule{\linewidth}{0.4pt}
 
 \noindent
-\textbf{Economic Importance:} The goal of causal inference is evaluate the average effect on an arbitrary member of the population. However, one question is whether this metric always sufficient, in application. Sometimes, the goal may not be generalizability but individualizability. Different between these goals is critical, in many settings. 
+
+
+\noindent\textbf{Economic Importance:} The goal of causal inference is to evaluate the average effect on an arbitrary member of the population. However, one question is whether this metric is always sufficient, in application. Sometimes, the goal may not be generalizability but individualization. This idea -- of integrating individual-level heterogeneity into traditional aggregate models -- is already influencing modern macroeconomic models. It is also at the heart of the traditional field experiment vs. lab experiment argument. There is no reason to believe that large-scale \text{``}individualized econometrics'' is not coming next. 
+
+Additionally, there may be large welfare gains -- and efficiency gains -- from targeted dosing vs. a one-size-fits-all approach, or from a one-size-fits-all approach to corollary subgroups. 
+
+Finally -- and perhaps more importantly -- it may be possible to aggregate these results together to uncover the population effect (obviously, under a different control/placebo experimental design). That is, we may be able to recover an ATE \emph{with individual-level heterogeneity}, which could have intriguing applications. 
 
 \noindent\rule{\linewidth}{0.4pt}
 
 \noindent
-\textbf{Data:} Not sure how to facilitate something like this.
+\textbf{Data:} The only way to conduct this study is to run some manipulation of an experiment which requires lots of funding, planning, and development. 
 
 \noindent\rule{\linewidth}{0.4pt}
 
 \noindent
 \textbf{Sources:} In Zotero.
+
+
+
+
+
+
+
+
+%The following is what you do if you were trying to attempt this from a biostatistical perspective. Run a double-blind N-of-1 trial (an experiment on a single individual, in which neither the individual receiving treatment nor the prescribing therapist know the level of medication being received, at any point in time) with varying levels of medication (low, medium, and high) on an 8-10 week basis. Proper \text{``}tapering'' phases need to be built in. For individuals who stop taking the medication, information should still be tracked, to properly evaluate the washout phase and the subsequent utility fluctuation. Analysis does not require individual-level covariates (but does require an abundance of pre-treatment values), although certain covariates should be tracked \emph{for the purpose of identifying missing data}, as well as providing a more comprehensive overview of causal effects. Additionally, proper incentives should be built into the experiment itself, in order to justify the MAR assumption. The outcomes tracked are tri-daily (morning, afternoon, evening) \text{``}mood'' scores and weekly PHQ-9 scores, in conjunction with \text{``}richer'' measures such as: sleep, step count, mood diary, adverse events, and biomarkers. The exact blend of covariates -- to the extent to which they are utilized -- is not as important and is not required for identification.
+
+
 
 
 
